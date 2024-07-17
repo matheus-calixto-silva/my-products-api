@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "tsx watch src/index.ts",
     "commit": "git-cz",
     "prepare": "husky install"
   },
@@ -13,6 +14,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/js": "^9.7.0",
     "@types/eslint__eslintrc": "^2.1.1",
+    "@types/node": "^20.14.11",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "9.x",
@@ -21,7 +23,9 @@
     "globals": "^15.8.0",
     "husky": "6",
     "lint-staged": "^15.2.7",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
   },
   "config": {
     "commitizen": {
