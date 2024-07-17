@@ -62,14 +62,12 @@ export const updateProduct = async (req: Request, res: Response) => {
   }
 };
 
-// Type guard to check if the error is a PrismaClientKnownRequestError
 function isPrismaClientKnownRequestError(
   error: unknown,
 ): error is PrismaClientKnownRequestError {
   return typeof error === 'object' && error !== null && 'code' in error;
 }
 
-// Interface for PrismaClientKnownRequestError
 interface PrismaClientKnownRequestError {
   code: string;
 }
