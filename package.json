@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "vercel-build": "npx prisma migrate deploy",
     "commit": "git-cz",
     "prepare": "husky install"
   },
