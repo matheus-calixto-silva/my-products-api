@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node -r tsconfig-paths/register src/index.ts",
+    "start": "ts-node -r tsconfig-paths/register dist/index.js",
     "dev": "tsx watch src/index.ts",
     "vercel-build": "npx prisma migrate deploy",
     "commit": "git-cz",
